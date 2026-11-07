@@ -65,7 +65,6 @@ app.get('/api/bookings', requireAuth, async (req, res) => {
 app.post('/api/bookings', requireAuth, async (req, res) => {
   const { roomId, date, startTime, endTime } = req.body;
 
-  // Validaciones basicas
     // Validaciones basicas
     const timeFormat = /^([01]\d|2[0-3]):[0-5]\d$/;
     const dateFormat = /^\d{4}-\d{2}-\d{2}$/;
